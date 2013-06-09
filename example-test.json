@@ -1,0 +1,52 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://saucelabs.com/test/guinea-pig"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "i am a link"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "I am another div"
+    },
+    {
+      "type": "goBack"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "fbemail"
+      },
+      "text": "jason@saucelabs.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "comments"
+      },
+      "text": "Here's some text to find."
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "submit"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Your comments: Here's some text to find."
+    }
+  ]
+}
