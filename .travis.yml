@@ -1,0 +1,9 @@
+language: node_js
+before_script:
+    - "npm install -g se-interpreter"
+script:
+    - "se-interpreter interpreter_config.json"
+env:
+    global:
+        - SAUCE_USERNAME=jcarr
+        - secure: "o9I53h2hZry0778M5kSqQpPTnckoT4SJ4cndGvpSLPDnjSm311Y1ouSZZ361\nt14+XyNfi2IEVEPnE778Q+F9EPzqst4xRaw/2Bt/yOnSj2HKZW/1F796KpXG\nffL/oj/UgqXIGXrEuDptGXFAOTuYCU5TcnKelgLDcTb2EK5JJ1U=" 
