@@ -1,6 +1,6 @@
 {
   "type": "interpreter-config",
-  "configuration": [
+  "configurations": [
     {
       "settings": [
         {
